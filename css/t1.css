@@ -8,3 +8,32 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 /* End Global Rules */
+.parent {
+  background-color: #eee;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: red;
+}
+
+/* Small Screen */
+@media (min-width:767px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Mid Screen */
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* L-Screen */
+@media (min-width:1200) {
+  .container {
+    width: 1170px;
+  }
+}
