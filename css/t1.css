@@ -1,39 +1,104 @@
+/* Start variables */
+:root {
+}
+/* End Variables */
 /* Global Rules */
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-body {
-  font-family: 'Work Sans', sans-serif;
-}
-/* End Global Rules */
-.parent {
-  background-color: #eee;
-}
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin-right: auto;
   margin-left: auto;
-  background-color: red;
+  margin-right: auto;
 }
-
+body {
+  font-family: "Work Sans", sans-serif;
+}
 /* Small Screen */
-@media (min-width:767px) {
+@media (min-width: 767px) {
   .container {
     width: 750px;
   }
 }
 /* Mid Screen */
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
 /* L-Screen */
-@media (min-width:1200) {
+@media (min-width: 1200) {
   .container {
     width: 1170px;
   }
 }
+/* End Global Rules */
+/* Header Start */
+.header {
+  padding: 20px;
+}
+.center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .Logo {
+  width: 70px;
+}
+.header .links {
+  position: relative;
+}
+.header .links:hover .b-Icon span:first-child {
+  width: 50%;
+}
+.header .links:hover .b-Icon span:nth-child(2) {
+  width: 100%;
+}
+.header .links:hover .b-Icon span:last-child {
+  width: 50%;
+}
+.header .links .b-Icon {
+  width: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.header .links .b-Icon span {
+  background-color: #333;
+  margin-bottom: 5px;
+}
+.header .links .b-Icon span:first-child {
+  height: 2px;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.header .links .b-Icon span:nth-child(2) {
+  height: 2px;
+  width: 50%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.header .links .b-Icon span:last-child {
+  height: 2px;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+ul {
+  list-style-type: none;
+}
+.header/* Header End */;
