@@ -2,6 +2,8 @@
 :root {
   --Main-Color: #2cbe;
   --Secondry-color: #2c4755;
+  --third-color: #f6f6f6;
+  --Main-Pad: 60px;
 }
 /* End Variables */
 /* Global Rules */
@@ -128,7 +130,7 @@ body {
   position: absolute;
   margin: 0;
   padding: 0;
-  background-color: #f6f6f6;
+  background-color: var(--third-color);
   right: 0;
   min-width: 200px;
   top: calc(100% + 15px);
@@ -144,7 +146,7 @@ body {
   border: 10px solid;
   top: -20px;
   right: 7.5px;
-  border-color: transparent transparent #f6f6f6;
+  border-color: transparent transparent var(--third-color);
 }
 .header .links ul li a {
   display: block;
@@ -200,9 +202,9 @@ body {
 /* Landing End */
 /* Features Start */
 .features {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #f6f6f6;
+  padding-top: var(--Main-Pad);
+  padding-bottom: var(--Main-Pad);
+  background-color: var(--third-color);
 }
 .features .container {
   display: grid;
@@ -231,8 +233,8 @@ body {
 /* Features End */
 /* Services Start */
 .services {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: var(--Main-Pad);
+  padding-bottom: var(--Main-Pad);
 }
 .services .services-content {
   display: grid;
@@ -285,3 +287,34 @@ body {
   }
 }
 /* Services End */
+/* Start portfolio */
+.portfolio {
+  background-color: var(--third-color);
+  padding-top: var(--Main-Pad);
+  padding-bottom: var(--Main-Pad);
+}
+.portfolio .Portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 100px;
+}
+.portfolio .Portfolio-content .card {
+  background-color: white;
+}
+/* Should get photos with same width */
+.portfolio .Portfolio-content .card img {
+  max-width: 100%;
+}
+.portfolio .info {
+  padding: 20px;
+}
+.Portfolio-content .info h3 {
+  margin: 0;
+}
+.Portfolio-content .info p {
+  line-height: 1.6;
+  color: #777;
+  margin-bottom: 0;
+}
+/* end portfolio */
