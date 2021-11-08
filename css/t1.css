@@ -4,6 +4,7 @@
   --Secondry-color: #2c4755;
   --third-color: #f6f6f6;
   --Main-Pad: 60px;
+  --transation: 0.3s;
 }
 /* End Variables */
 /* Global Rules */
@@ -11,6 +12,9 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Work Sans", sans-serif;
@@ -40,6 +44,17 @@ body {
   }
 }
 /* End Global Rules */
+/* Simple Frameworks Start */
+.grid-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.pad-main-color {
+  padding-top: var(--Main-Pad);
+  padding-bottom: var(--Main-Pad);
+  background-color: var(--third-color);
+}
+/* Simple Frameworks End */
 /* Start Components */
 .special-heading {
   color: #ebeced;
@@ -101,29 +116,29 @@ body {
 .header .links .b-Icon span:first-child {
   height: 2px;
   width: 100%;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
+  transition: var(--transation, 0.3s);
+  -webkit-transition: var(--transation, 0.3s);
+  -moz-transition: var(--transation, 0.3s);
+  -ms-transition: var(--transation, 0.3s);
+  -o-transition: var(--transation, 0.3s);
 }
 .header .links .b-Icon span:nth-child(2) {
   height: 2px;
   width: 50%;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
+  transition: var(--transation, 0.3s);
+  -webkit-transition: var(--transation, 0.3s);
+  -moz-transition: var(--transation, 0.3s);
+  -ms-transition: var(--transation, 0.3s);
+  -o-transition: var(--transation, 0.3s);
 }
 .header .links .b-Icon span:last-child {
   height: 2px;
   width: 100%;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
+  transition: var(--transation, 0.3s);
+  -webkit-transition: var(--transation, 0.3s);
+  -moz-transition: var(--transation, 0.3s);
+  -ms-transition: var(--transation, 0.3s);
+  -o-transition: var(--transation, 0.3s);
 }
 .header .links ul {
   list-style-type: none;
@@ -153,11 +168,11 @@ body {
   text-decoration: none;
   color: #222;
   padding: 15px;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
+  transition: var(--transation, 0.3s);
+  -webkit-transition: var(--transation, 0.3s);
+  -moz-transition: var(--transation, 0.3s);
+  -ms-transition: var(--transation, 0.3s);
+  -o-transition: var(--transation, 0.3s);
 }
 .header .links ul li a:hover {
   background: linear-gradient(to right, rgb(4, 62, 77), rgb(24, 124, 206));
@@ -201,14 +216,7 @@ body {
 }
 /* Landing End */
 /* Features Start */
-.features {
-  padding-top: var(--Main-Pad);
-  padding-bottom: var(--Main-Pad);
-  background-color: var(--third-color);
-}
 .features .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
 .features .feat {
@@ -233,12 +241,9 @@ body {
 /* Features End */
 /* Services Start */
 .services {
-  padding-top: var(--Main-Pad);
-  padding-bottom: var(--Main-Pad);
+  background-color: white;
 }
 .services .services-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
   margin-top: 100px;
 }
@@ -288,14 +293,7 @@ body {
 }
 /* Services End */
 /* Start portfolio */
-.portfolio {
-  background-color: var(--third-color);
-  padding-top: var(--Main-Pad);
-  padding-bottom: var(--Main-Pad);
-}
 .portfolio .Portfolio-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
   margin-top: 100px;
 }
@@ -391,11 +389,6 @@ body {
 }
 /* About end  */
 /* Contact start */
-.contact {
-  padding-top: var(--Main-Pad);
-  padding-bottom: var(--Main-Pad);
-  background-color: var(--third-color);
-}
 .contact .info {
   padding-top: var(--Main-Pad);
   padding-bottom: var(--Main-Pad);
