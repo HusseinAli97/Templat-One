@@ -390,3 +390,58 @@ body {
   color: #777;
 }
 /* About end  */
+/* Contact start */
+.contact {
+  padding-top: var(--Main-Pad);
+  padding-bottom: var(--Main-Pad);
+  background-color: var(--third-color);
+}
+.contact .info {
+  padding-top: var(--Main-Pad);
+  padding-bottom: var(--Main-Pad);
+  text-align: center;
+}
+.contact .info .lable {
+  font-size: 35px;
+  font-weight: 800;
+  color: var(--Secondry-color);
+  letter-spacing: -2px;
+  margin-bottom: 15px;
+}
+.info .link {
+  text-decoration: none;
+  display: block;
+  font-size: 35px;
+  color: var(--Main-Color);
+  font-weight: 800;
+}
+.info .socail {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.info .socail i {
+  margin-left: 10px;
+  color: var(--Secondry-color);
+}
+@media (max-width: 767px) {
+  .contact .info .lable,
+  .contact .info .link {
+    font-size: 25px;
+  }
+}
+/* Contact end  */
+/* Start footer */
+.footer {
+  color: white;
+  background-color: var(--Secondry-color);
+  padding: 30px 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.footer span {
+  font-weight: bold;
+  color: var(--Main-Color);
+}
+/* End footer */
